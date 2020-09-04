@@ -1,0 +1,138 @@
+<!--
+Template notes:
+<!DOCTYPE html> // Declares document type - tells browser version of html we
+                // are using  (html5)
+
+<html lang="en" dir="ltr"> // tells browser everything between opening and closing
+                          // tags will be html code
+                          // Code consists of head and body
+                          // lang specifies langauge, dir = "ltr" means direction
+                          // of text will be written from left to right
+
+  <head>
+  // Holds info about web page, tells browser how to handle page
+  // ** Container for meta data, which holds info about html page
+
+    // meta data is data about data - Not displayed on webpage
+    // meta (Data) elements provide info about our html document
+    // Tells our browser how to render webpage (e.g encoding), and provides info about content of website
+    // (e.g search engine can use this data in some way such by looking at, e.g
+      <meta name = "description" >)
+
+    // Metadata is used by browsers (how to display content or reload page),
+    search engines (keywords), and other web services
+
+    // charset tells our browser that all of the text in our webpage is encoded
+    // in the utf-8 encoding system. So it also tells the browser to use this
+     encoding system
+    // We must use characters only in the list for our encoding system in order
+    // for it it be rendered correctly by our website
+    (others characters outside this list would be rendered by our char set
+    in the wrong way)
+    //Note that different languages may use different encoding systems
+    //But utf-8 works for all langauges** (since it includes all symbols, such
+    as everything from unicode)
+
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+
+  <body>
+  // Stores content of html page
+  </body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>⚽ Uvernes's Personal Site</title>
+</head>
+
+<body>
+  <!-- width and cellspacing are depreciated and must be replaced with css later on -->
+  <table width="900" , cellspacing="20">
+    <tr>
+      <td><img src="circleProfilePicture.png" , size="200" , width="200" , alt "Picture of Uvernes Somarriba"></td>
+      <td>
+        <h1>Uvernes Somarriba</h1>
+        <p><em>Upcoming web developer and researcher in the field of artificial intelligence</em></p>
+        <p> I am currently a second year student who is aiming to one day have a
+          research career in the field of artificial intelligence. I love soccer,
+          mathematics, and computer science. </p>
+      </td>
+    </tr>
+  </table>
+
+  <hr>
+  <h3>Education</h3>
+  <ul>
+    <li><em> (2019 - present) Computer Science and Math Honours Undergrad at
+        <strong><a href="https://carleton.ca" target="_blank">
+            Carleton University </a></strong></em>
+    </li>
+  </ul>
+  <hr>
+  <h3>Work Experience</h3>
+  <!-- Note that cellspacing defines the size of the space between two cells,
+  but this is a depreciated attribute (should use css isntead later on)-->
+  <table cellspacing="10">
+    <thead>
+      <tr>
+        <th>Date</th>
+        <th>Work</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>April 2019 - August 2019</td>
+        <td>Cashier at McDonald's</td>
+      </tr>
+      <tr>
+        <td>May 2021 - August 2021</td>
+        <td>Artificial Intelligence Research Assistant</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+  <h3>Skills</h3>
+  <!-- Outer table will have one row with two cells. Each cell will be a table
+    with two rows and two columns>-->
+  <table border = "1">
+    <tr>
+      <td>
+        <table cellspacing = "8">
+          <tr>
+            <td>Java</td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+        </table>
+      </td>
+
+      <td>
+        <table cellspacing = "5">
+          <tr>
+            <td>HTML</td>
+            <td>⭐⭐⭐⭐</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>⭐⭐⭐</td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table> <br>
+  <hr><br>
+  <a href="hobbies.html"> My Hobbies </a> <br><br><br>
+  <a href="contactMe.html"> Contact Me </a>
+
+</body>
+
+</html>

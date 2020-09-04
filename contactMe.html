@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Uvernes's Personal Page</title>
+</head>
+
+<body>
+  <h3> Contact Me </h3>
+
+  <p>
+    Email : uvernes@gmail.com <br><br>
+    Cellphone number : 613-986-6568 <br><br>
+    Location : Ottawa, Ontario
+  </p>
+  <hr>
+  <!-- enctype = "text/plain" specifies data in form is encoded in plain text (so when
+  info is extracted, decode it using the plain text system)
+  method = "post"
+  action - what should happen when we click submit
+  mailto:email - When we hit submit, email app opens with mailto email in address
+                 and all of the input information in the body of the email
+  method="post" - Gets info from our input fields and includes (puts) it in the body
+   of the form
+
+   name = "" - the value assigned to name is used to refer to (aka identify) the data
+    inputted for the given input (acts like a var name for the input data)
+-->
+  <form action="mailto:uvernes@gmail.com" method="post" enctype="text/plain">
+    <label>Your Name:</label>
+    <input type="text" name=yourName"" value=""> <br>
+    <label>Your Email:</label>
+    <input type="email" name="yourEmail" value = ""> <br>
+    <label>Your Message: </label> <br>
+    <textarea name="yourMessage" rows="10" cols="30"></textarea><br>
+    <input type = "submit" name = "">
+  </form> <br>
+  <a href="index.html"> Back to Main Page </a>
+</body>
+
+</html>
